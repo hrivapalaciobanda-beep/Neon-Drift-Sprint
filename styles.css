@@ -1,0 +1,10 @@
+:root {
+  --bg: #0b0f1a;
+  --hud: #c8e7ff;
+  --accent: #00f0ff;
+}
+html, body { margin:0; height:100%; background: var(--bg); font-family: system-ui, sans-serif; color: var(--hud); }
+#game { display:block; margin:0 auto; image-rendering: pixelated; background: radial-gradient(ellipse at center, #0b0f1a 0%, #05070d 100%); border: 1px solid #122; }
+.hud { position: fixed; left: 50%; transform: translateX(-50%); top: 10px; display:flex; gap:16px; align-items:center; background: rgba(0,0,0,.25); padding: 8px 12px; border-radius: 10px; }
+.hud div { font-weight: 600; }
+.help { opacity: .75; font-weight: 500; }
